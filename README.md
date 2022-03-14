@@ -1,16 +1,8 @@
 # jsontask
 
-A new Flutter project.
+Flutter Read Local JSON File From assets folder and display data💙
+**Screenshot of output is given below🚀:
+![Screenshot_1647281974](https://user-images.githubusercontent.com/70325196/158236722-614ff278-9f88-4ba7-8398-2d033bc89933.png)
+![Screenshot_1647281930](https://user-images.githubusercontent.com/70325196/158236750-c2d0c9c4-8334-4d85-ba72-5e1bf7b5e486.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
