@@ -1,7 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_import, avoid_web_libraries_in_flutter
 
 import 'package:flutter/material.dart';
 import 'package:jsontask/widgets/json_page.dart';
+import 'package:jsontask/widgets/show_data.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: JsonPage(),
+      home:
+      ShowData(),
     );
   }
 }

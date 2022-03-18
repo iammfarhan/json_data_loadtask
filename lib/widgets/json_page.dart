@@ -1,9 +1,10 @@
-// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, unused_import, prefer_typing_uninitialized_variables, unnecessary_string_interpolations
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, unused_import, prefer_typing_uninitialized_variables, unnecessary_string_interpolations, unused_element, unused_local_variable
 
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:jsontask/widgets/countries_model.dart';
+import 'package:jsontask/model/countries_model.dart';
 
 class JsonPage extends StatefulWidget {
   const JsonPage({Key? key}) : super(key: key);
@@ -39,14 +40,26 @@ class _JsonPageState extends State<JsonPage> {
             return ListView.builder(itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Card ( 
-                elevation: 1,
-                child: ListTile( 
-                title: Text(ShowJsonData[index].name,style: TextStyle(
-                fontSize: 16, fontWeight: FontWeight.w600, color: Colors.black,)),
-                subtitle: Text(ShowJsonData[index].code,style: TextStyle(
-                fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey,)),
-              ),
+                child: Card(
+                  elevation: 1,
+                  child: ListTile(
+                    title: Text(ShowJsonData[index].name,
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black,
+                        )),
+                    subtitle: Text(ShowJsonData[index].code,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey,
+                        )),
+                    onTap: () {
+                      final currentStatus = ShowJsonData[index];
+                      Navigator.of(context).pop<Countries>(currentStatus);
+                    },
+                  ),
                 ),
               );
             });
